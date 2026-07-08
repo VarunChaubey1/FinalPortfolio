@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     leadForm.reset();
                     
                     // REPLACE THIS URL with your actual hosted PDF checklist link (e.g. Google Drive/Dropbox/Server)
-                    const pdfUrl = "https://example.com/power-bi-performance-checklist.pdf"; 
+                    const pdfUrl = "./checklist.html"; 
                     
                     // Replace the submit button with a direct download button to bypass browser popup blockers
                     const submitBtn = leadForm.querySelector('button[type="submit"]');
