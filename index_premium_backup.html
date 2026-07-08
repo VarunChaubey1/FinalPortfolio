@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Chaubey | Premium Power BI ROI Expert</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify Icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#030303] text-white antialiased selection:bg-orange-500/30 overflow-x-hidden relative">
+
+    <!-- Premium Background Ambient Glows -->
+    <div class="absolute top-[-10%] left-[15%] w-[600px] h-[600px] bg-orange-600/10 rounded-full blur-[150px] pointer-events-none -z-10 animate-pulse"></div>
+    <div class="absolute top-[800px] right-5 w-[700px] h-[700px] bg-amber-500/5 rounded-full blur-[180px] pointer-events-none -z-10"></div>
+    <div class="absolute bottom-[400px] left-[10%] w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+
+    <!-- Premium Navbar -->
+    <nav class="fixed top-6 w-full z-[100] px-4 md:px-8">
+        <div class="max-w-7xl mx-auto glass-nav rounded-3xl px-6 md:px-8 py-5 flex justify-between items-center border border-white/10 shadow-2xl relative animate-fade-in">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 bg-gradient-to-br from-amber-400 to-orange-600 rounded-xl flex items-center justify-center font-black text-black text-xl shadow-lg shadow-orange-500/20">V</div>
+                <span class="font-bold tracking-tighter text-2xl uppercase italic">Analyst <span class="text-orange-500">Varun</span></span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div id="nav-links" class="hidden lg:flex gap-10 text-[11px] font-bold uppercase tracking-[0.25em] text-slate-400">
+                <a href="#services" class="nav-item hover:text-white transition-all duration-300">Services</a>
+                <a href="#arsenal" class="nav-item hover:text-white transition-all duration-300">Tech Stack</a>
+                <a href="#work" class="nav-item hover:text-white transition-all duration-300">Case Studies</a>
+                <a href="#engagement" class="nav-item hover:text-white transition-all duration-300">Hire Me</a>
+                <a href="#testimonials" class="nav-item hover:text-white transition-all duration-300">Reviews</a>
+            </div>
+
+            <!-- Socials & Hire Me Button -->
+            <div class="hidden lg:flex items-center gap-6">
+                <div class="flex items-center gap-4 text-slate-400">
+                    <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="hover:text-orange-500 transition-colors">
+                        <iconify-icon icon="mdi:linkedin" width="22"></iconify-icon>
+                    </a>
+                    <a href="https://github.com/varunchaubey" target="_blank" class="hover:text-orange-500 transition-colors">
+                        <iconify-icon icon="mdi:github" width="22"></iconify-icon>
+                    </a>
+                </div>
+                <a href="#contact" class="bg-white text-black px-8 py-3.5 rounded-full text-[11px] font-extrabold uppercase hover:bg-orange-500 hover:text-white transition-all shadow-lg duration-300">Hire Me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white focus:outline-none flex items-center">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="30" id="menu-icon"></iconify-icon>
+            </button>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="hidden absolute top-24 left-0 w-full bg-[#080808]/95 border border-white/10 rounded-2xl p-8 flex flex-col gap-6 text-center shadow-2xl z-[110] backdrop-blur-xl transition-all duration-300">
+                <a href="#services" class="text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-orange-500 py-2">Services</a>
+                <a href="#arsenal" class="text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-orange-500 py-2">Tech Stack</a>
+                <a href="#work" class="text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-orange-500 py-2">Case Studies</a>
+                <a href="#engagement" class="text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-orange-500 py-2">Hire Me</a>
+                <a href="#testimonials" class="text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-orange-500 py-2">Reviews</a>
+                
+                <div class="flex justify-center gap-6 text-slate-400 py-2 border-t border-white/5">
+                    <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="hover:text-orange-500">
+                        <iconify-icon icon="mdi:linkedin" width="26"></iconify-icon>
+                    </a>
+                    <a href="https://github.com/varunchaubey" target="_blank" class="hover:text-orange-500">
+                        <iconify-icon icon="mdi:github" width="26"></iconify-icon>
+                    </a>
+                </div>
+                <a href="#contact" class="bg-orange-500 text-white py-4 rounded-xl text-xs font-extrabold uppercase tracking-widest">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN PORTFOLIO BODY -->
+    <main class="max-w-7xl mx-auto px-4 md:px-8 pt-44 pb-32">
+        
+        <!-- HERO SECTION -->
+        <div class="grid lg:grid-cols-12 gap-6 mb-12">
+            <!-- Left Side: Clean Text Layout -->
+            <div class="lg:col-span-8 bento-card p-8 md:p-14 flex flex-col justify-end min-h-[500px] lg:min-h-[600px] relative overflow-hidden group reveal">
+                <div class="absolute -top-12 -right-12 p-12 opacity-5 group-hover:opacity-10 transition-all duration-1000 pointer-events-none">
+                    <iconify-icon icon="solar:chart-square-bold-duotone" width="480" class="text-orange-500"></iconify-icon>
+                </div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="badge flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                            Open for Freelance Contracts
+                        </span>
+                    </div>
+                    <!-- Balanced Typography -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] mb-6">
+                        Turning raw data <br>into dashboards <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-orange-500">Executives actually use.</span>
+                    </h1>
+                    <p class="text-slate-400 max-w-2xl text-base md:text-lg leading-relaxed mb-8 font-normal">
+                        3+ years of enterprise experience + <span class="text-white">MBA in Finance</span>. I build automated dashboards tracking MRR, Cash Flow, LTV/CAC, and EBITDA to eliminate manual Excel work.
+                    </p>
+                    
+                    <!-- Massive Call To Action Buttons -->
+                    <div class="flex flex-wrap gap-5">
+                        <a href="https://calendly.com/varunchaubey" target="_blank" class="bg-orange-500 text-white px-10 py-5 rounded-2xl font-black uppercase text-xs tracking-[0.15em] hover:shadow-[0_0_35px_rgba(249,115,22,0.4)] transition-all duration-300">Book Free Discovery Call</a>
+                        <a href="mailto:varunchaubey34@gmail.com?subject=Request%20Free%20Dashboard%20Audit" class="bg-white/5 border border-white/10 px-10 py-5 rounded-2xl font-black uppercase text-xs tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300">Get Free Dashboard Audit</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Profile Bento -->
+            <div class="lg:col-span-4 bento-card p-8 md:p-12 flex flex-col items-center justify-center text-center relative overflow-hidden reveal">
+                <div class="absolute top-1/4 w-36 h-36 bg-orange-600/20 rounded-full blur-[40px] pointer-events-none -z-10"></div>
+                
+                <!-- Expanded Photo Dimension -->
+                <div class="w-56 h-56 rounded-[3.5rem] overflow-hidden mb-6 border-2 border-white/10 relative group shadow-2xl transition-all duration-500 hover:border-orange-500/40">
+                    <img src="varun photo.webp" alt="Varun Chaubey" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                
+                <h2 class="text-3xl font-bold mb-1">Varun Chaubey</h2>
+                <p class="text-orange-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">BI Architect • MBA (Finance)</p>
+                
+                <!-- Quick Social Handles inside Profile Bento -->
+                <div class="flex gap-4 mb-6 text-slate-400">
+                    <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center hover:text-orange-500 hover:border-orange-500/20 transition-all">
+                        <iconify-icon icon="mdi:linkedin" width="20"></iconify-icon>
+                    </a>
+                    <a href="https://github.com/varunchaubey" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center hover:text-orange-500 hover:border-orange-500/20 transition-all">
+                        <iconify-icon icon="mdi:github" width="20"></iconify-icon>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 w-full text-left">
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-orange-500/20 transition-all duration-300">
+                        <h3 class="text-2xl font-black text-white">65%</h3>
+                        <p class="text-[9px] uppercase text-slate-500 font-bold tracking-wider mt-1">Speed Gain</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-orange-500/20 transition-all duration-300">
+                        <h3 class="text-2xl font-black text-white">700K+</h3>
+                        <p class="text-[9px] uppercase text-slate-500 font-bold tracking-wider mt-1">Data Synced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRUST BAR -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="bento-card p-8 text-center reveal">
+                <h4 class="text-3xl font-black text-white">3+ Years</h4>
+                <p class="text-[10px] uppercase font-bold text-slate-500 tracking-widest mt-2">Enterprise Exp.</p>
+            </div>
+            <div class="bento-card p-8 text-center reveal">
+                <h4 class="text-3xl font-black text-white">14+ Dashboards</h4>
+                <p class="text-[10px] uppercase font-bold text-slate-500 tracking-widest mt-2">Production Ready</p>
+            </div>
+            <div class="bento-card p-8 text-center border border-orange-500/20 reveal">
+                <h4 class="text-3xl font-black text-orange-500">100%</h4>
+                <p class="text-[10px] uppercase font-bold text-slate-500 tracking-widest mt-2">On-Time Delivery</p>
+            </div>
+            <div class="bento-card p-8 text-center reveal">
+                <h4 class="text-3xl font-black text-white">Zero</h4>
+                <p class="text-[10px] uppercase font-bold text-slate-500 tracking-widest mt-2">Broken Refreshes</p>
+            </div>
+        </div>
+
+        <!-- BEFORE VS AFTER SECTION -->
+        <div class="bento-card p-8 md:p-16 mb-12 reveal">
+            <div class="max-w-3xl mb-12">
+                <span class="badge mb-4">The Impact</span>
+                <h2 class="text-4xl md:text-5xl font-black italic">How I Optimize Reporting</h2>
+                <p class="text-slate-400 mt-4">Automating and streamlining complex pipelines to save time and reduce manual errors.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-red-950/10 border border-red-500/10 p-8 rounded-3xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <iconify-icon icon="solar:close-circle-bold" class="text-red-500" width="24"></iconify-icon>
+                        <h4 class="text-lg font-bold text-red-400">Before Optimization</h4>
+                    </div>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li>• Slow-loading, fragmented Excel reports</li>
+                        <li>• Prone to manual errors during data refreshes</li>
+                        <li>• Outdated visuals lacking interactive analysis</li>
+                    </ul>
+                </div>
+                <div class="bg-green-950/10 border border-green-500/10 p-8 rounded-3xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <iconify-icon icon="solar:check-circle-bold" class="text-green-500" width="24"></iconify-icon>
+                        <h4 class="text-lg font-bold text-green-400">With Power BI + Python + SQL</h4>
+                    </div>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li>• Automated SQL & Python data pipelines</li>
+                        <li>• Clean star-schema and high data accuracy</li>
+                        <li>• Intuitive dashboards tailored for executives</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECH ARSENAL SECTION -->
+        <div id="arsenal" class="bento-card p-8 md:p-16 mb-12 reveal">
+            <div class="max-w-3xl mb-12">
+                <span class="badge mb-4">Tech Stack</span>
+                <h2 class="text-4xl md:text-5xl font-black italic">Tools & Technologies</h2>
+                <p class="text-slate-400 mt-4">Working with industry-standard technologies to ensure high performance and clean structures.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+                <div class="bg-white/5 border border-white/5 p-6 rounded-3xl hover:border-orange-500/20 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] transition-all flex flex-col items-center text-center">
+                    <iconify-icon icon="logos:microsoft-power-bi" width="44" class="mb-4"></iconify-icon>
+                    <h5 class="font-bold text-sm">Power BI & Fabric</h5>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold tracking-widest mt-1">Modeling & Fabric Lakehouse</p>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-6 rounded-3xl hover:border-orange-500/20 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] transition-all flex flex-col items-center text-center">
+                    <iconify-icon icon="logos:python" width="44" class="mb-4"></iconify-icon>
+                    <h5 class="font-bold text-sm">Python</h5>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold tracking-widest mt-1">ETL & Automation</p>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-6 rounded-3xl hover:border-orange-500/20 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] transition-all flex flex-col items-center text-center">
+                    <iconify-icon icon="logos:mysql-icon" width="44" class="mb-4"></iconify-icon>
+                    <h5 class="font-bold text-sm">SQL</h5>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold tracking-widest mt-1">Warehousing</p>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-6 rounded-3xl hover:border-orange-500/20 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] transition-all flex flex-col items-center text-center">
+                    <iconify-icon icon="logos:dbt" width="44" class="mb-4"></iconify-icon>
+                    <h5 class="font-bold text-sm">dbt</h5>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold tracking-widest mt-1">Analytics Eng.</p>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-6 rounded-3xl hover:border-orange-500/20 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] transition-all flex flex-col items-center text-center">
+                    <iconify-icon icon="logos:snowflake-icon" width="44" class="mb-4"></iconify-icon>
+                    <h5 class="font-bold text-sm">Snowflake</h5>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold tracking-widest mt-1">Cloud Data Lake</p>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-6 rounded-3xl hover:border-orange-500/20 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] transition-all flex flex-col items-center text-center">
+                    <iconify-icon icon="solar:tuning-bold-duotone" class="text-orange-500 mb-4" width="44"></iconify-icon>
+                    <h5 class="font-bold text-sm">DAX Studio</h5>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold tracking-widest mt-1">Optimization</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEAD MAGNET SECTION -->
+        <div id="lead-magnet" class="bento-card p-8 md:p-16 mb-12 reveal relative overflow-hidden">
+            <div class="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] bg-orange-600/10 rounded-full blur-[80px] pointer-events-none -z-10 animate-pulse"></div>
+            
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <!-- Left: Content details -->
+                <div class="lg:col-span-7">
+                    <span class="badge mb-4">Free Resource</span>
+                    <h2 class="text-3xl md:text-4xl font-black italic mb-6 leading-tight">
+                        Is your Power BI Dashboard <br><span class="text-orange-500">running slow?</span>
+                    </h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 max-w-xl">
+                        Download my <strong>Ultimate Power BI Performance Checklist</strong>. It’s a 1-page playbook filled with exact strategies I use to reduce load times by 65%.
+                    </p>
+                    
+                    <ul class="space-y-3 text-xs font-bold text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-bold" class="text-orange-500 mt-0.5" width="16"></iconify-icon>
+                            <span>7-Step DAX Optimization Tuning guide</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-bold" class="text-orange-500 mt-0.5" width="16"></iconify-icon>
+                            <span>Star Schema Best Practices for cleaner models</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-bold" class="text-orange-500 mt-0.5" width="16"></iconify-icon>
+                            <span>How to slash memory usage & file sizes by 40%+</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Right: Email Opt-in Form -->
+                <div class="lg:col-span-5 bg-[#070707] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl relative">
+                    <h3 class="text-xl font-bold mb-2">Get Instant Access</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider mb-6">Enter details to download the free PDF</p>
+                    
+                    <form id="lead-form" class="space-y-4">
+                        <input type="hidden" name="access_key" value="984b3419-8011-4600-8bb5-dd985671057e">
+                        <input type="hidden" name="subject" value="New Power BI Checklist Lead!">
+                        <input type="hidden" name="from_name" value="Analyst Varun Portfolio">
+                        
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" required 
+                            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-orange-500/50 focus:bg-white/[0.07] transition-all">
+                        </div>
+                        
+                        <div>
+                            <input type="email" name="email" placeholder="Business Email" required 
+                            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-orange-500/50 focus:bg-white/[0.07] transition-all">
+                        </div>
+                        
+                        <button type="submit" 
+                        class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3.5 rounded-xl text-[10px] font-black uppercase tracking-widest shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 active:scale-95 transition-all">
+                            Download Free PDF
+                        </button>
+                        
+                        <div id="form-result" class="text-center text-[10px] text-slate-400 font-bold mt-2"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICES SECTION -->
+        <div id="services" class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bento-card p-10 group reveal flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 italic text-white">Profitability Engineering</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">ROI dashboards, CAC/LTV analysis, and churn prediction. I build the financial reporting that helps you double down on what works.</p>
+                </div>
+                <p class="text-orange-500 text-xs font-black uppercase tracking-widest">Retainer / Professional Tier</p>
+            </div>
+            <div class="bento-card p-10 group reveal flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 italic text-white">Performance Optimization</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Slow dashboards get abandoned. I re-architect slow reports to load 65% faster using advanced DAX tuning.</p>
+                </div>
+                <p class="text-orange-500 text-xs font-black uppercase tracking-widest">Starts at $600 (Project-Based)</p>
+            </div>
+            <div class="bento-card p-10 group reveal flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 italic text-white">End-to-End Pipelines</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Raw data to clean warehouse. Automated Python/SQL ETL pipelines that handle 700k+ records reliably.</p>
+                </div>
+                <p class="text-orange-500 text-xs font-black uppercase tracking-widest">Starts at $1,800 (Professional)</p>
+            </div>
+        </div>
+
+        <!-- LIVE WORK & INTERACTIVE PREVIEWS (Zomato & Spotify side-by-side) -->
+        <div id="work" class="mb-12">
+            <div class="text-center mb-12">
+                <span class="badge">Interactive Portfolio</span>
+                <h2 class="text-4xl md:text-5xl font-black italic mt-4 font-black">Live Project Demos</h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Zomato (Interactive Embed) -->
+                <div class="bento-card p-2 group reveal flex flex-col justify-between border-orange-500/10">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="badge">Live Preview</span>
+                            <span class="text-xs font-bold text-slate-500">Global Operations</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 italic">Zomato Global Intelligence</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Converting 1M+ rows of restaurant data into a real-time profitability engine across 15+ countries.
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 mb-2 text-[10px] text-slate-400 bg-white/5 p-3 rounded-xl border border-white/5">
+                            <div>
+                                <span class="text-orange-500 font-extrabold uppercase block tracking-wider text-[8px]">Problem</span>
+                                1M+ laggy rows
+                            </div>
+                            <div>
+                                <span class="text-orange-500 font-extrabold uppercase block tracking-wider text-[8px]">Solution</span>
+                                DAX & Star Schema
+                            </div>
+                            <div>
+                                <span class="text-green-500 font-extrabold uppercase block tracking-wider text-[8px]">Impact</span>
+                                65% Faster Loading
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Compact Live Embed -->
+                    <div class="rounded-3xl overflow-hidden border border-white/10 bg-black h-[360px] relative shadow-inner mx-2 mb-2">
+                        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" 
+                        class="w-full h-full opacity-90 group-hover:opacity-100 transition-all duration-500" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+
+                    <div class="p-4 pt-2 flex justify-between items-center text-xs">
+                        <span class="text-slate-500 font-bold">SQL Server + Power BI</span>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="flex items-center gap-2 text-orange-500 hover:text-white transition-colors font-bold uppercase tracking-wider text-[10px]">
+                            Open Full Report <iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Spotify (Interactive Embed - NEW LINK ADDED!) -->
+                <div class="bento-card p-2 group reveal flex flex-col justify-between border-orange-500/10">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="badge">Live Preview</span>
+                            <span class="text-xs font-bold text-slate-500">Music Intelligence</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 italic">Spotify Streaming Insights</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Analyzing global song streams, artists metrics, and song attributes with real-time performance tracking.
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 mb-2 text-[10px] text-slate-400 bg-white/5 p-3 rounded-xl border border-white/5">
+                            <div>
+                                <span class="text-orange-500 font-extrabold uppercase block tracking-wider text-[8px]">Problem</span>
+                                Manual API pipelines
+                            </div>
+                            <div>
+                                <span class="text-orange-500 font-extrabold uppercase block tracking-wider text-[8px]">Solution</span>
+                                Python ETL Automation
+                            </div>
+                            <div>
+                                <span class="text-green-500 font-extrabold uppercase block tracking-wider text-[8px]">Impact</span>
+                                Daily Auto-Refreshes
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Compact Live Embed for Spotify -->
+                    <div class="rounded-3xl overflow-hidden border border-white/10 bg-black h-[360px] relative shadow-inner mx-2 mb-2">
+                        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMzU4MDhkNDctZWM5Zi00NDQ4LWFkN2ItNzNiNWRiNWVjZjIwIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" 
+                        class="w-full h-full opacity-90 group-hover:opacity-100 transition-all duration-500" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+
+                    <div class="p-4 pt-2 flex justify-between items-center text-xs">
+                        <span class="text-slate-500 font-bold">Python Web API + Power BI</span>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMzU4MDhkNDctZWM5Zi00NDQ4LWFkN2ItNzNiNWRiNWVjZjIwIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="flex items-center gap-2 text-orange-500 hover:text-white transition-colors font-bold uppercase tracking-wider text-[10px]">
+                            Open Full Report <iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FREELANCE ENGAGEMENT MODELS (HIRE ME) -->
+        <div id="engagement" class="bento-card p-8 md:p-16 mb-12 reveal">
+            <div class="max-w-3xl mb-12">
+                <span class="badge mb-4">How We Can Work Together</span>
+                <h2 class="text-4xl md:text-5xl font-black italic">Freelance Engagement Models</h2>
+                <p class="text-slate-400 mt-4">Flexible collaboration structures designed to meet your specific BI requirements.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/5 border border-white/5 p-8 rounded-3xl hover:border-orange-500/20 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:folder-with-files-bold-duotone" class="text-orange-500" width="28"></iconify-icon>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Project-Based</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6">Best for well-defined dashboards or pipelines. Fixed scope, clear milestones, and on-time delivery.</p>
+                    </div>
+                    <span class="text-[10px] font-black uppercase text-orange-500 tracking-wider">Starting from $600</span>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-8 rounded-3xl hover:border-orange-500/20 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:calendar-date-bold-duotone" class="text-amber-500" width="28"></iconify-icon>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Monthly BI Retainer</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6">For ongoing support, report upgrades, and DAX adjustments. Guaranteed hours dedicated to your system every month.</p>
+                    </div>
+                    <span class="text-[10px] font-black uppercase text-orange-500 tracking-wider">Starts at $1,200/mo</span>
+                </div>
+                <div class="bg-white/5 border border-white/5 p-8 rounded-3xl hover:border-orange-500/20 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:clock-square-bold-duotone" class="text-orange-500" width="28"></iconify-icon>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Hourly Consulting</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6">Perfect for code reviews, performance bottleneck debugging, or strategic DAX optimization sessions.</p>
+                    </div>
+                    <span class="text-[10px] font-black uppercase text-orange-500 tracking-wider">$50 - $75 / Hour</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROCESS SECTION -->
+        <div id="process" class="mb-12">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black italic">The 4-Phase Delivery Process</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bento-card p-8 md:p-10 reveal">
+                    <div class="text-orange-500 text-5xl font-black mb-6">01</div>
+                    <h4 class="font-bold text-lg mb-2">Discovery</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">30-min audit of your KPIs, messy data sources, and business goals.</p>
+                </div>
+                <div class="bento-card p-8 md:p-10 reveal">
+                    <div class="text-orange-500 text-5xl font-black mb-6">02</div>
+                    <h4 class="font-bold text-lg mb-2">Architecture</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Star-schema design, ETL flow diagrams, and UI/UX wireframes.</p>
+                </div>
+                <div class="bento-card p-8 md:p-10 reveal">
+                    <div class="text-orange-500 text-5xl font-black mb-6">03</div>
+                    <h4 class="font-bold text-lg mb-2">Build</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Advanced DAX dev, Python scripts, and performance validation.</p>
+                </div>
+                <div class="bento-card p-8 md:p-10 reveal">
+                    <div class="text-orange-500 text-5xl font-black mb-6">04</div>
+                    <h4 class="font-bold text-lg mb-2">Handoff</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Documentation, training, and 30-day priority support.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLIENT REVIEWS SECTION -->
+        <div id="testimonials" class="mb-12">
+            <div class="text-center mb-12">
+                <span class="badge">Social Proof</span>
+                <h2 class="text-4xl md:text-5xl font-black italic mt-4">What My Clients Say</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bento-card p-8 md:p-10 reveal flex flex-col justify-between">
+                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                        "Varun's unique combination of a finance background and technical BI expertise completely transformed our executive meetings. Our dashboard loading times dropped by more than half, and we finally have single-source accuracy."
+                    </p>
+                    <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center font-bold text-orange-500">MR</div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Michael R.</h5>
+                            <p class="text-[9px] uppercase tracking-wider text-slate-500">Finance Lead • Gleuhr Contracts (London, UK)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bento-card p-8 md:p-10 reveal flex flex-col justify-between">
+                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                        "He eliminated weeks of manual Excel calculations. The new Python to Power BI data pipeline handles over 700k rows seamlessly without any data drops. Highly recommended for enterprise projects."
+                    </p>
+                    <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center font-bold text-orange-500">SK</div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Sanjay K.</h5>
+                            <p class="text-[9px] uppercase tracking-wider text-slate-500">Operations Director • Adglobal360 (Global Operations)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRICING SECTION -->
+        <div id="pricing" class="grid lg:grid-cols-3 gap-6 mb-12">
+            <div class="bento-card p-8 md:p-12 hover:border-white/20 transition-all reveal flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-1">Starter</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-black tracking-widest mb-6 italic">Executive KPI Portal</p>
+                    <div class="text-5xl font-black mb-8">$600<span class="text-sm text-slate-600 font-normal">+</span></div>
+                    <ul class="space-y-4 text-xs font-bold text-slate-400 mb-10">
+                        <li class="flex items-center gap-2"><iconify-icon icon="mdi:check-circle" class="text-orange-500" width="18"></iconify-icon> Star Schema Design</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="mdi:check-circle" class="text-orange-500" width="18"></iconify-icon> Up to 5 Report Pages</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="mdi:check-circle" class="text-orange-500" width="18"></iconify-icon> 7-Day Support & Loom Video</li>
+                    </ul>
+                </div>
+                <a href="mailto:varunchaubey34@gmail.com" class="block w-full py-4 rounded-2xl bg-white/5 border border-white/10 text-center text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all">Start Project</a>
+            </div>
+
+            <div class="bento-card p-8 md:p-12 bg-gradient-to-b from-orange-500/[0.07] to-transparent border-orange-500/30 relative scale-100 lg:scale-105 z-10 reveal flex flex-col justify-between">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-[8px] font-black px-6 py-2 rounded-full uppercase tracking-widest whitespace-nowrap">Most Popular</div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-1 mt-2">Professional</h3>
+                    <p class="text-orange-500 text-[10px] uppercase font-black tracking-widest mb-6 italic">Full BI Ecosystem</p>
+                    <div class="text-5xl font-black mb-8">$1,800<span class="text-sm text-slate-400 font-normal">+</span></div>
+                    <ul class="space-y-4 text-xs font-bold text-slate-300 mb-10">
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-orange-500" width="18"></iconify-icon> Python ETL Pipelines</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-orange-500" width="18"></iconify-icon> Multi-Source Integration</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-orange-500" width="18"></iconify-icon> Risk-Free Prototype Phase</li>
+                    </ul>
+                </div>
+                <a href="mailto:varunchaubey34@gmail.com" class="block w-full py-5 rounded-2xl bg-orange-500 text-white text-center text-[10px] font-black uppercase tracking-widest shadow-2xl hover:scale-105 transition-all">Secure Spot</a>
+            </div>
+
+            <div class="bento-card p-8 md:p-12 flex flex-col justify-between reveal">
+                <div>
+                    <h3 class="text-2xl font-bold mb-1">Enterprise</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-black tracking-widest mb-6 italic">Strategy & Overhaul</p>
+                    <div class="text-5xl font-black mb-8">$4,500<span class="text-sm text-slate-600 font-normal">+</span></div>
+                    <ul class="space-y-4 text-xs font-bold text-slate-400 mb-10">
+                        <li class="flex items-center gap-2"><iconify-icon icon="mdi:check-circle" class="text-orange-500" width="18"></iconify-icon> 20+ Page Master Portal</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="mdi:check-circle" class="text-orange-500" width="18"></iconify-icon> Git-Based Version Control</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="mdi:check-circle" class="text-orange-500" width="18"></iconify-icon> 60-Day Support & Documentation</li>
+                    </ul>
+                </div>
+                <a href="https://calendly.com/varunchaubey" class="block w-full py-4 rounded-2xl bg-white/5 border border-white/10 text-center text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all">Book Discovery</a>
+            </div>
+        </div>
+
+        <!-- FAQ: REMOVING OBJECTIONS -->
+        <div id="faq" class="bento-card p-8 md:p-16 mb-12 reveal">
+            <h3 class="text-3xl md:text-4xl font-black mb-12 italic text-center">Frequently Asked <span class="text-orange-500">Questions</span></h3>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h4 class="font-bold mb-2 text-orange-500 italic uppercase text-xs tracking-widest">Do you sign NDAs?</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Yes. I work with sensitive financial data daily. I'm happy to sign your standard NDA before we share credentials.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-orange-500 italic uppercase text-xs tracking-widest">Who owns the code?</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">You do. You receive all PBIX files, Python scripts, and SQL queries. No vendor lock-in, ever.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-orange-500 italic uppercase text-xs tracking-widest">Supported Data Sources?</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">I connect to Excel, SQL databases (PostgreSQL, MySQL, SQL Server), Cloud Warehouses (Snowflake, BigQuery), Web APIs, and Salesforce/CRMs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-orange-500 italic uppercase text-xs tracking-widest">Data Privacy & Security?</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">I design GDPR/CCPA-compliant pipelines. Your data is handled securely via standard Microsoft gateways with Row-Level Security (RLS).</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-orange-500 italic uppercase text-xs tracking-widest">Contract & Payments?</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">I contract securely via Upwork, Deel, or standard invoices. Payments are accepted in USD, EUR, or GBP via Wise/Bank Transfer.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-orange-500 italic uppercase text-xs tracking-widest">Project Timelines?</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Starter projects take 1 week. Retainers and complete enterprise BI setups typically range from 4 to 8 weeks.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT & HIRE ME SECTION (Last Section) -->
+        <div id="contact" class="bento-card p-8 md:p-16 mb-12 reveal relative overflow-hidden">
+            <div class="absolute bottom-[-10%] right-[-10%] w-[350px] h-[350px] bg-orange-600/10 rounded-full blur-[80px] pointer-events-none -z-10"></div>
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Side: Informative Column with elegant spacing -->
+                <div class="lg:col-span-6 flex flex-col justify-between py-2">
+                    <div>
+                        <span class="badge mb-6">Get In Touch</span>
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight italic mb-6 leading-tight">Let's build something <br><span class="text-orange-500">beautiful.</span></h2>
+                        <p class="text-slate-400 leading-relaxed text-base md:text-lg mb-8 max-w-xl">
+                            Ready to transition your business dashboard from a slow, manual tracker to a streamlined, automated BI system?
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-orange-500/20 transition-all duration-300">
+                            <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center">
+                                <iconify-icon icon="solar:letter-bold-duotone" class="text-orange-500" width="22"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-[9px] uppercase font-bold text-slate-500 tracking-wider">Direct Email</p>
+                                <a href="mailto:varunchaubey34@gmail.com" class="text-sm font-semibold text-white hover:text-orange-500 transition-colors">varunchaubey34@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-orange-500/20 transition-all duration-300">
+                            <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center">
+                                <iconify-icon icon="solar:videocamera-record-bold-duotone" class="text-orange-500" width="22"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-[9px] uppercase font-bold text-slate-500 tracking-wider">Book a Video Call</p>
+                                <a href="https://calendly.com/varunchaubey" target="_blank" class="text-sm font-semibold text-white hover:text-orange-500 transition-colors">Calendly Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Two major action blocks -->
+                <div class="lg:col-span-6 grid sm:grid-cols-2 gap-6">
+                    <!-- LinkedIn Card -->
+                    <div class="bg-[#070707] border border-white/5 hover:border-orange-500/30 p-8 rounded-[2.5rem] flex flex-col justify-between transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+                        <div>
+                            <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6">
+                                <iconify-icon icon="mdi:linkedin" class="text-orange-500" width="26"></iconify-icon>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2">Instant Message</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-8">Connect directly on LinkedIn for quick consulting queries.</p>
+                        </div>
+                        <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="block w-full text-center py-4 rounded-2xl bg-orange-500 text-white text-[10px] font-black uppercase tracking-widest hover:bg-orange-600 transition-all">Go to LinkedIn</a>
+                    </div>
+
+                    <!-- Free Audit Card -->
+                    <div class="bg-[#070707] border border-white/5 hover:border-orange-500/30 p-8 rounded-[2.5rem] flex flex-col justify-between transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+                        <div>
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                                <iconify-icon icon="solar:checklist-bold-duotone" class="text-white" width="26"></iconify-icon>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2">Dashboard Audit</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-8">Send your report layout, and I will share performance recommendations.</p>
+                        </div>
+                        <a href="mailto:varunchaubey34@gmail.com?subject=Request%20Free%20Dashboard%20Audit" class="block w-full text-center py-4 rounded-2xl bg-white/5 border border-white/10 text-white text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all">Request Free Audit</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-16 border-t border-white/5 text-center text-slate-600 text-[10px] font-black uppercase tracking-[0.5em] px-4 flex flex-col items-center gap-6">
+        <div class="flex gap-6 text-slate-500">
+            <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="hover:text-orange-500 transition-colors">
+                <iconify-icon icon="mdi:linkedin" width="18"></iconify-icon>
+            </a>
+            <a href="https://github.com/varunchaubey" target="_blank" class="hover:text-orange-500 transition-colors">
+                <iconify-icon icon="mdi:github" width="18"></iconify-icon>
+            </a>
+        </div>
+        <div>Design & Dev by Varun Chaubey • US/EU BI Standards • <span id="current-year"></span></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

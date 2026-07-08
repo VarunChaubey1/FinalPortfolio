@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Performance Checklist | Analyst Varun</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange: #ff8a3d;
+            --dark: #0f172a;
+            --gray: #64748b;
+            --light-bg: #f8fafc;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--dark);
+            background: #fff;
+            line-height: 1.5;
+            padding: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid var(--dark);
+            padding: 40px;
+            border-radius: 8px;
+            background: #fff;
+            position: relative;
+        }
+        /* Top Header */
+        header {
+            border-bottom: 2px solid var(--dark);
+            padding-bottom: 24px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .logo-area h1 {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+        .logo-area p {
+            font-size: 13px;
+            color: var(--gray);
+            font-family: 'JetBrains Mono', monospace;
+            margin-top: 4px;
+        }
+        .badge {
+            background: var(--dark);
+            color: #fff;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        /* Grid sections */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            background: var(--light-bg);
+        }
+        .card h2 {
+            font-size: 15px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card h2 span {
+            color: var(--orange);
+        }
+        ul { list-style: none; }
+        li {
+            font-size: 12.5px;
+            color: #334155;
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+        }
+        li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-size: 11px;
+        }
+        /* Pro Tip Footer inside page */
+        .pro-tip {
+            background: #fff8f1;
+            border: 1px solid rgba(255, 138, 61, 0.3);
+            border-radius: 6px;
+            padding: 16px;
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .pro-tip strong {
+            color: var(--orange);
+        }
+        /* Page Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--gray);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        footer a { color: var(--dark); text-decoration: none; font-weight: 700; }
+        
+        /* Print Action Button (Invisible during print) */
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--orange);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(255, 138, 61, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255, 138, 61, 0.5);
+        }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0; }
+            .container { border: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">
+        🖨️ Save as PDF / Print
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <h1>Power BI Speed Checklist</h1>
+                <p>By Varun Chaubey • BI Architect (MBA Finance & Marketing)</p>
+            </div>
+            <span class="badge">1-PAGE PLAYBOOK</span>
+        </header>
+
+        <div class="grid">
+            <!-- 1. Star Schema & Data Modeling -->
+            <div class="card">
+                <h2><span>01</span> Data Modeling & Star Schema</h2>
+                <ul>
+                    <li><strong>Fact & Dimension Separation:</strong> Never use a single flat table. Group dimensions (products, clients) around fact tables.</li>
+                    <li><strong>Disable Auto Date/Time:</strong> Turn off "Auto date/time" in Options. It creates hidden calendars that bloat file sizes.</li>
+                    <li><strong>Bidirectional Filtering:</strong> Avoid bidirectional relationships. Use single directional filters to prevent query loops.</li>
+                </ul>
+            </div>
+
+            <!-- 2. DAX Tuning & Logic -->
+            <div class="card">
+                <h2><span>02</span> Advanced DAX Optimization</h2>
+                <ul>
+                    <li><strong>Use DIVIDE():</strong> Never use <code>/</code> for division. <code>DIVIDE()</code> handles division by zero automatically and is faster.</li>
+                    <li><strong>Store with variables (VAR):</strong> Reuse calculation results instead of rewriting formulas. Saves massive CPU cycles.</li>
+                    <li><strong>Use KEEPFILTERS():</strong> Instead of overriding filters, keep context filters active for faster visual calculations.</li>
+                </ul>
+            </div>
+
+            <!-- 3. Memory & Column Reduction -->
+            <div class="card">
+                <h2><span>03</span> Data Size Compression</h2>
+                <ul>
+                    <li><strong>Remove Cardinality Columns:</strong> Delete row IDs, GUIDs, and full timestamp columns if they are not needed for metrics.</li>
+                    <li><strong>Prefer Integers over Text:</strong> Convert text columns to ID integers. Power BI compresses numbers much faster than strings.</li>
+                    <li><strong>No Calculated Fact Columns:</strong> Avoid calculated columns in Fact tables. Build them in Power Query or SQL instead.</li>
+                </ul>
+            </div>
+
+            <!-- 4. Query Folding & ETL -->
+            <div class="card">
+                <h2><span>04</span> Power Query & Warehousing</h2>
+                <ul>
+                    <li><strong>Enable Query Folding:</strong> Perform operations close to source. Verify the "View Native Query" option is active.</li>
+                    <li><strong>SQL Joins:</strong> Avoid merges/joins in Power Query. Perform joins directly at the Database or Data Lakehouse level.</li>
+                    <li><strong>Incremental Refresh:</strong> Setup incremental updates for tables exceeding 1 Million rows to save server load.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pro-tip">
+            <strong>Pro Tip:</strong> Before publishing, run your model through <strong>DAX Studio</strong>. It shows exact column memory consumption and locates optimization bottlenecks in seconds.
+        </div>
+
+        <footer>
+            <span>Need help optimizing your enterprise reports?</span>
+            <a href="mailto:varunchaubey34@gmail.com">Let's talk: varunchaubey34@gmail.com</a>
+        </footer>
+    </div>
+
+</body>
+</html>

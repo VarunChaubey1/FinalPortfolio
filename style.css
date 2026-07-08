@@ -1,0 +1,106 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    background-color: #030303; 
+    /* Premium dark tech grid pattern background */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 28px 28px;
+}
+
+h1, h2, h3, h4, .font-black {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Glassmorphism Navigation */
+.glass-nav {
+    background: rgba(3, 3, 3, 0.75);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Premium Bento Cards with Glowing Border Effect */
+.bento-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 40px;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+    border-color: rgba(249, 115, 22, 0.3);
+    background: linear-gradient(145deg, rgba(249, 115, 22, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%);
+    transform: translateY(-6px);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9), 
+                0 0 50px -10px rgba(249, 115, 22, 0.2);
+}
+
+/* ROI Badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 100px;
+    color: #f59e0b;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Smooth Interactive Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Nav Transition Animation on Load */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { 
+    width: 6px; 
+}
+::-webkit-scrollbar-track {
+    background: #030303;
+}
+::-webkit-scrollbar-thumb { 
+    background: #222; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #f59e0b; 
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    .bento-card { 
+        border-radius: 28px; 
+        padding: 2rem !important; 
+    }
+    .badge {
+        padding: 8px 16px;
+        font-size: 8px;
+    }
+}
